@@ -6,25 +6,9 @@
     line-height: 1.375;
 }
 .page-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 147px;
-    z-index: 100;
-}
-.page-header::before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    @supports (backdrop-filter:blur(10px)){
-        backdrop-filter:blur(10px);
-        background-color: rgba(222, 222, 222, 0.50);
-    }
 
 }
+
 .Page-header_logo{
     display: inline-block;
     width: 202;
@@ -34,7 +18,6 @@
 .Page-header_lodo-img{
     width: 100%;
     height: 100%;
-
 }
 
 .page-header_nav-link{
@@ -51,11 +34,11 @@
     text-decoration: none;
     background-color: transparent;
     padding: 15px 40px;
-    border: 1px solid #1f1e1e;
+    border: 1px solid black;
     font-size: 16px;
     line-height: normal;
     font-weight: 600;
-    color: #1f1e1e;
+    color: black;
 }
 
 .page-footer{
@@ -89,7 +72,7 @@
     font-weight: 400px;
     font-size: 45px;
     line-height: normal;
-    color: #1f1e1e;
+    color: black;
     text-align: center;
     padding-left: 40;
     padding-right: 40;
@@ -127,7 +110,6 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    
 }
 
 .events{
@@ -154,8 +136,6 @@
 
 .card-event{
     box-sizing: border-box;
-    
-
 }
 
 .card-event_link{

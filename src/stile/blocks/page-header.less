@@ -1,0 +1,54 @@
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    z-index: 100;
+
+    g::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(222, 222, 222, 0.50);
+
+        @supports (backdrop-filter:blur(10px)){
+            backdrop-filter:blur(10px);
+            background-color: rgba(222, 222, 222, 0.50);
+        }
+    }
+
+    g_container {
+        position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    g_logo{
+        display: inline-block;
+        width: 202;
+        height: 147px;
+    }
+
+    g_nav{
+        display: inline-block;
+    }
+
+    g_nav-link{
+        margin: 0 25px;
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+    }
+}
